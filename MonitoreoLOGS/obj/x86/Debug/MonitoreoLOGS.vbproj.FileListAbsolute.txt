@@ -1,0 +1,86 @@
+H:\Descargas\proyectos\MonitoreoLOGS\MonitoreoLOGS\obj\x86\Debug\ResolveAssemblyReference.cache
+H:\Descargas\proyectos\MonitoreoLOGS\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.frmMain.resources
+H:\Descargas\proyectos\MonitoreoLOGS\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.Resources.resources
+H:\Descargas\proyectos\MonitoreoLOGS\MonitoreoLOGS\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+H:\Descargas\proyectos\MonitoreoLOGS\MonitoreoLOGS\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+H:\Descargas\proyectos\MonitoreoLOGSV1\MonitoreoLOGS\bin\Debug\MonitoreoLOGS.exe
+H:\Descargas\proyectos\MonitoreoLOGSV1\MonitoreoLOGS\bin\Debug\MonitoreoLOGS.pdb
+H:\Descargas\proyectos\MonitoreoLOGSV1\MonitoreoLOGS\bin\Debug\MonitoreoLOGS.xml
+H:\Descargas\proyectos\MonitoreoLOGSV1\MonitoreoLOGS\bin\Debug\ClassMailssl.dll
+H:\Descargas\proyectos\MonitoreoLOGSV1\MonitoreoLOGS\obj\x86\Debug\ResolveAssemblyReference.cache
+H:\Descargas\proyectos\MonitoreoLOGSV1\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.frmMain.resources
+H:\Descargas\proyectos\MonitoreoLOGSV1\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.Resources.resources
+H:\Descargas\proyectos\MonitoreoLOGSV1\MonitoreoLOGS\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+H:\Descargas\proyectos\MonitoreoLOGSV1\MonitoreoLOGS\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+H:\Descargas\proyectos\MonitoreoLOGSV1\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.exe
+H:\Descargas\proyectos\MonitoreoLOGSV1\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.xml
+H:\Descargas\proyectos\MonitoreoLOGSV1\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.pdb
+H:\Descargas\proyectos\MonitoreoLOGSV2\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.exe
+H:\Descargas\proyectos\MonitoreoLOGSV2\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.xml
+H:\Descargas\proyectos\MonitoreoLOGSV2\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.pdb
+H:\Descargas\proyectos\MonitoreoLOGSV2\MonitoreoLOGS\bin\Debug\MonitoreoLOGS.exe
+H:\Descargas\proyectos\MonitoreoLOGSV2\MonitoreoLOGS\bin\Debug\MonitoreoLOGS.pdb
+H:\Descargas\proyectos\MonitoreoLOGSV2\MonitoreoLOGS\bin\Debug\MonitoreoLOGS.xml
+H:\Descargas\proyectos\MonitoreoLOGSV2\MonitoreoLOGS\bin\Debug\ClassMailssl.dll
+H:\Descargas\proyectos\MonitoreoLOGSV2\MonitoreoLOGS\obj\x86\Debug\ResolveAssemblyReference.cache
+H:\Descargas\proyectos\MonitoreoLOGSV2\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.frmMain.resources
+H:\Descargas\proyectos\MonitoreoLOGSV2\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.Resources.resources
+H:\Descargas\proyectos\MonitoreoLOGSV2\MonitoreoLOGS\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+H:\Descargas\proyectos\MonitoreoLOGSV2\MonitoreoLOGS\obj\x86\Debug\GenerateResource-ResGen.read.4.tlog
+H:\Descargas\proyectos\MonitoreoLOGSV2\MonitoreoLOGS\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+H:\Descargas\proyectos\MonitoreoLOGSV2\MonitoreoLOGS\bin\Debug\MonitoreoLOGS.exe.config
+H:\Descargas\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\bin\Debug\MonitoreoLOGS.exe.config
+H:\Descargas\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.exe
+H:\Descargas\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.xml
+H:\Descargas\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.pdb
+H:\Descargas\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\bin\Debug\MonitoreoLOGS.exe
+H:\Descargas\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\bin\Debug\MonitoreoLOGS.pdb
+H:\Descargas\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\bin\Debug\MonitoreoLOGS.xml
+H:\Descargas\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\obj\x86\Debug\ResolveAssemblyReference.cache
+H:\Descargas\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.frmMain.resources
+H:\Descargas\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.Resources.resources
+H:\Descargas\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+H:\Descargas\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\obj\x86\Debug\GenerateResource-ResGen.read.4.tlog
+H:\Descargas\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+H:\Descargas\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\bin\Debug\ClassMail.dll
+Z:\Uriel\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\bin\Debug\MonitoreoLOGS.exe.config
+Z:\Uriel\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.exe
+Z:\Uriel\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.xml
+Z:\Uriel\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.pdb
+Z:\Uriel\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\bin\Debug\MonitoreoLOGS.exe
+Z:\Uriel\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\bin\Debug\MonitoreoLOGS.pdb
+Z:\Uriel\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\bin\Debug\MonitoreoLOGS.xml
+Z:\Uriel\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\bin\Debug\ClassMail.dll
+Z:\Uriel\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\obj\x86\Debug\ResolveAssemblyReference.cache
+Z:\Uriel\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.frmMain.resources
+Z:\Uriel\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.Resources.resources
+Z:\Uriel\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+Z:\Uriel\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\obj\x86\Debug\GenerateResource-ResGen.read.4.tlog
+Z:\Uriel\proyectos\MonitoreoLOGSV3\MonitoreoLOGS\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+Z:\Uriel\proyectos\MonitoreoLOGS V3.1\MonitoreoLOGS\bin\Debug\MonitoreoLOGS.exe.config
+Z:\Uriel\proyectos\MonitoreoLOGS V3.1\MonitoreoLOGS\bin\Debug\MonitoreoLOGS.exe
+Z:\Uriel\proyectos\MonitoreoLOGS V3.1\MonitoreoLOGS\bin\Debug\MonitoreoLOGS.pdb
+Z:\Uriel\proyectos\MonitoreoLOGS V3.1\MonitoreoLOGS\bin\Debug\MonitoreoLOGS.xml
+Z:\Uriel\proyectos\MonitoreoLOGS V3.1\MonitoreoLOGS\bin\Debug\ClassMail.dll
+Z:\Uriel\proyectos\MonitoreoLOGS V3.1\MonitoreoLOGS\obj\x86\Debug\ResolveAssemblyReference.cache
+Z:\Uriel\proyectos\MonitoreoLOGS V3.1\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.frmMain.resources
+Z:\Uriel\proyectos\MonitoreoLOGS V3.1\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.Resources.resources
+Z:\Uriel\proyectos\MonitoreoLOGS V3.1\MonitoreoLOGS\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+Z:\Uriel\proyectos\MonitoreoLOGS V3.1\MonitoreoLOGS\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+Z:\Uriel\proyectos\MonitoreoLOGS V3.1\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.exe
+Z:\Uriel\proyectos\MonitoreoLOGS V3.1\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.xml
+Z:\Uriel\proyectos\MonitoreoLOGS V3.1\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.pdb
+D:\TN\Desarrollos\Proyectos propios\MonitoreoLOGS V4.0.0.0\MonitoreoLOGS\bin\Debug\MonitoreoLOGS.exe.config
+D:\TN\Desarrollos\Proyectos propios\MonitoreoLOGS V4.0.0.0\MonitoreoLOGS\bin\Debug\MonitoreoLOGS.exe
+D:\TN\Desarrollos\Proyectos propios\MonitoreoLOGS V4.0.0.0\MonitoreoLOGS\bin\Debug\MonitoreoLOGS.pdb
+D:\TN\Desarrollos\Proyectos propios\MonitoreoLOGS V4.0.0.0\MonitoreoLOGS\bin\Debug\MonitoreoLOGS.xml
+D:\TN\Desarrollos\Proyectos propios\MonitoreoLOGS V4.0.0.0\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.vbprojResolveAssemblyReference.cache
+D:\TN\Desarrollos\Proyectos propios\MonitoreoLOGS V4.0.0.0\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.frmMain.resources
+D:\TN\Desarrollos\Proyectos propios\MonitoreoLOGS V4.0.0.0\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.Resources.resources
+D:\TN\Desarrollos\Proyectos propios\MonitoreoLOGS V4.0.0.0\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.vbproj.GenerateResource.Cache
+D:\TN\Desarrollos\Proyectos propios\MonitoreoLOGS V4.0.0.0\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.exe
+D:\TN\Desarrollos\Proyectos propios\MonitoreoLOGS V4.0.0.0\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.xml
+D:\TN\Desarrollos\Proyectos propios\MonitoreoLOGS V4.0.0.0\MonitoreoLOGS\obj\x86\Debug\MonitoreoLOGS.pdb
+D:\TN\Desarrollos\Proyectos propios\MonitoreoLOGS V4.0.0.0\MonitoreoLOGS\bin\Debug\CorreoElectronico.dll
+D:\TN\Desarrollos\Proyectos propios\MonitoreoLOGS V4.0.0.0\MonitoreoLOGS\bin\Debug\CorreoElectronico.pdb
+D:\TN\Desarrollos\Proyectos propios\MonitoreoLOGS V4.0.0.0\MonitoreoLOGS\bin\Debug\CorreoElectronico.xml

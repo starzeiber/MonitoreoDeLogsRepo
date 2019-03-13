@@ -1,0 +1,70 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MonitoreoLOGS
+</name>
+</assembly>
+<members>
+<member name="T:MonitoreoLOGS.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:MonitoreoLOGS.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:MonitoreoLOGS.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+<member name="T:MonitoreoLOGS.frmMain">
+ <summary>
+ Clase que realiza un monitoreo de los logs en los visores de sucesos
+ </summary>
+ <remarks>UMB
+ Fecha de creación: 06/06/13</remarks>
+</member>
+<member name="F:MonitoreoLOGS.frmMain.iIntervaloMonitoreo">
+ <summary>
+ Intervalo entre cada monitoreo en milisegundos
+ </summary>
+ <remarks>UMB
+ Fecha de creación: 130613</remarks>
+</member>
+<member name="F:MonitoreoLOGS.frmMain.iTiempoMaxNoVentas">
+ <summary>
+ Intervalo entre la ultima venta y la hora actual en minutos
+ </summary>
+ <remarks>UMB
+ Fecha de creación: 130613</remarks>
+</member>
+<member name="F:MonitoreoLOGS.frmMain.iHoraInicioMonitoreo">
+ <summary>
+ Hora inicial del monitoreo en formato de 24 horas
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:MonitoreoLOGS.frmMain.iHoraFinMonitoreo">
+ <summary>
+ Hora de fin del monitoreo en formato de 24 horas
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:MonitoreoLOGS.frmMain.FLeerLogs(System.String,System.String@,System.String@)">
+ <summary>
+ Función que lee los logs y evalua sus respuestas
+ </summary>
+ <param name="sNombreLOG">nombre del log a leer</param>
+ <param name="lContadorTrxExitosa">Variable que almacena el conteo de transacciones exitosas</param>
+ <param name="lContadorTrxNoExitosa">Variable que almacena el conteo de transacciones no exitosas</param>
+ <returns>la fecha y hora del ultimo registro del visor de sucesos leido</returns>
+ <remarks>UMB
+ Fecha de creación 06/06/13</remarks>
+</member>
+</members>
+</doc>
