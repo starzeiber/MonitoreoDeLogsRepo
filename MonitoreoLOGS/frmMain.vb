@@ -47,9 +47,9 @@ Public Class frmMain
     ' ''' <remarks></remarks>
     Private sNombreCadena As String
 
-    Private correo As New CorreoElectronico.Correo()
+    Private correo As New EnvioCorreo.EnviarCorreo
 
-    Private configuracionCorreo As New CorreoElectronico.ConfiguracionCorreo()
+    Private configuracionCorreo As New EnvioCorreo.ConfiguracionCorreo
 
 #End Region
 
@@ -69,8 +69,6 @@ Public Class frmMain
                 configuracionCorreo.conCertificado = False
             End If
 
-            configuracionCorreo.conImagenDeEncabezado = False
-            configuracionCorreo.esHtmlElCuerpoCorreo = False
             configuracionCorreo.smtp = ConfigurationManager.AppSettings("smtp")
             configuracionCorreo.usuario = ConfigurationManager.AppSettings("usuario")
             configuracionCorreo.pass = ConfigurationManager.AppSettings("pass")
@@ -198,7 +196,7 @@ Public Class frmMain
 
             Catch ex As Exception
                 oMyLog.WriteEntry("Error en FleerLogs: " & ex.Message & ", " & oEntry.Message & ", " & entradaLog, System.Diagnostics.EventLogEntryType.Error)
-                correo.EnviarCorreoError(configuracionCorreo, "Monitoreo " & sNombreCadena, "Error en la aplicación: " & ex.Message & ". Se cerrará por seguridad")
+                correo.EnvioCorreo(configuracionCorreo, "Monitoreo " & sNombreCadena, "Error en la aplicación: " & ex.Message & ". Se cerrará por seguridad", True)
                 Application.Exit()
                 Return Date.Now.ToString()
             Finally
@@ -269,7 +267,7 @@ Public Class frmMain
 
             Catch ex As Exception
                 oMyLog.WriteEntry("Error en FleerLogs: " & ex.Message & ", " & oEntry.Message & ", " & entradaLog, System.Diagnostics.EventLogEntryType.Error)
-                correo.EnviarCorreoError(configuracionCorreo, "Monitoreo " & sNombreCadena, "Error en la aplicación: " & ex.Message & ". Se cerrará por seguridad")
+                correo.EnvioCorreo(configuracionCorreo, "Monitoreo " & sNombreCadena, "Error en la aplicación: " & ex.Message & ". Se cerrará por seguridad", True)
                 Application.Exit()
                 Return Date.Now.ToString()
             Finally
@@ -336,7 +334,7 @@ Public Class frmMain
         Catch ex As Exception
             '@070613 cualquier error se escribe a nuestro log
             oMyLog.WriteEntry("Error en mytime.tick" & ex.Message, System.Diagnostics.EventLogEntryType.Error)
-            correo.EnviarCorreoError(configuracionCorreo, "Monitoreo " & sNombreCadena, "Error en la aplicación: " & ex.Message & ". Se cerrará por seguridad")
+            correo.EnvioCorreo(configuracionCorreo, "Monitoreo " & sNombreCadena, "Error en la aplicación: " & ex.Message & ". Se cerrará por seguridad", True)
             Application.Exit()
         Finally
             GC.Collect()
@@ -351,9 +349,9 @@ Public Class frmMain
             Dim splitResultado() As String
             splitResultado = e.Result.ToString.Split(New Char() {"|"})
             If splitResultado(0) = "0" And splitResultado(1) = "0" Then
-                correo.EnviarCorreo(configuracionCorreo, "Monitoreo " & sNombreCadena, "No se han detectado ventas en el log " & TextBox_NombreLog.Text & " en mas de " & iTiempoMaxNoVentas & " minutos")
+                correo.EnvioCorreo(configuracionCorreo, "Monitoreo " & sNombreCadena, "No se han detectado ventas en el log " & TextBox_NombreLog.Text & " en mas de " & iTiempoMaxNoVentas & " minutos", True)
             ElseIf Integer.Parse(splitResultado(1)) > numeroTrxErrorValidacion Then
-                correo.EnviarCorreo(configuracionCorreo, "Monitoreo " & sNombreCadena, "Se han detectado más de 10 transacciones con error en el log " & TextBox_NombreLog.Text & " en el último periodo de " & iTiempoMaxNoVentas & " minutos")
+                correo.EnvioCorreo(configuracionCorreo, "Monitoreo " & sNombreCadena, "Se han detectado más de 10 transacciones con error en el log " & TextBox_NombreLog.Text & " en el último periodo de " & iTiempoMaxNoVentas & " minutos", True)
             End If
         End If
     End Sub

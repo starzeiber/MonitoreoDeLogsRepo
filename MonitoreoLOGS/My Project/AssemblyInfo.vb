@@ -31,11 +31,13 @@ Imports System.Runtime.InteropServices
 ' mediante el asterisco ('*'), como se muestra a continuación:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-'@UMB   120613  version 1.0.0.0 se crea la aplicación que lee los registros de un log especificamente indicado evaluando su respuesta como transacción exitosa o no y envia correo de reporte
-'@UMB   200613  version 2.0.0.0 se comienza la restructuración del programa para que sea monitoreo automático y secuencial con liberación de recursos
-'@UMB   120613  version 3.0.0.0 se agrupan las funciones para encapsular métodos y realizar una monitoreo con TIMER además de ser configurable por .config
-'@UMB   180214  Versión 3.1.0.0 se agrega un monitoreo especial a Isend en la madrugada y se agrega el log de errores cuando haya excepciones
-'@      091118  Versión 4.0.0.0 Se re estructuró para manejar la mensajería TPV además de la del PX
+'Siglas Autor   Fecha   Versión     Descripción
+'@      UMB   120613    1.0.0.0     se crea la aplicación que lee los registros de un log especificamente indicado evaluando su respuesta como transacción exitosa o no y envia correo de reporte
+'@      UMB   200613    2.0.0.0     se comienza la restructuración del programa para que sea monitoreo automático y secuencial con liberación de recursos
+'@      UMB   120613    3.0.0.0     se agrupan las funciones para encapsular métodos y realizar una monitoreo con TIMER además de ser configurable por .config
+'@      UMB   180214    3.1.0.0     se agrega un monitoreo especial a Isend en la madrugada y se agrega el log de errores cuando haya excepciones
+'@      UMB   091118    4.0.0.0     Se re estructuró para manejar la mensajería TPV además de la del PX
+'@      UMB   130319    4.1.0.0     Se actualiza la versión de la DLL de correo
 
-<Assembly: AssemblyVersion("4.0.0.0")>
-<Assembly: AssemblyFileVersion("4.0.0.0")>
+<Assembly: AssemblyVersion("4.1.0.0")>
+<Assembly: AssemblyFileVersion("4.1.0.0")>
