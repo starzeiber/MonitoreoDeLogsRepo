@@ -38,6 +38,7 @@ Imports System.Runtime.InteropServices
 '@      UMB   180214    3.1.0.0     se agrega un monitoreo especial a Isend en la madrugada y se agrega el log de errores cuando haya excepciones
 '@      UMB   091118    4.0.0.0     Se re estructuró para manejar la mensajería TPV además de la del PX
 '@      UMB   130319    4.1.0.0     Se actualiza la versión de la DLL de correo
+'@      UMB   190319    4.2.0.0     Se cambia el envío de correo de ser desde la aplicación a consumir un ws, por temas de salida a internet
 
-<Assembly: AssemblyVersion("4.1.0.0")>
-<Assembly: AssemblyFileVersion("4.1.0.0")>
+<Assembly: AssemblyVersion("4.2.0.0")>
+<Assembly: AssemblyFileVersion("4.2.0.0")>

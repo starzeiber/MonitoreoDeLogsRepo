@@ -80,3 +80,20 @@ D:\TN\Desarrollos\Proyectos propios\MonitoreoLOGS V4.0.0.0\MonitoreoLOGS\obj\x86
 D:\TN\Desarrollos\Proyectos propios\MonitoreoLOGS V4.0.0.0\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.exe
 D:\TN\Desarrollos\Proyectos propios\MonitoreoLOGS V4.0.0.0\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.xml
 D:\TN\Desarrollos\Proyectos propios\MonitoreoLOGS V4.0.0.0\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.pdb
+D:\TN\Desarrollos\Proyectos\MonitoreoDeLogsRepo\MonitoreoLOGS\bin\Release\MonitoreoLOGS.exe.config
+D:\TN\Desarrollos\Proyectos\MonitoreoDeLogsRepo\MonitoreoLOGS\bin\Release\MonitoreoLOGS.exe
+D:\TN\Desarrollos\Proyectos\MonitoreoDeLogsRepo\MonitoreoLOGS\bin\Release\MonitoreoLOGS.XmlSerializers.dll
+D:\TN\Desarrollos\Proyectos\MonitoreoDeLogsRepo\MonitoreoLOGS\bin\Release\MonitoreoLOGS.pdb
+D:\TN\Desarrollos\Proyectos\MonitoreoDeLogsRepo\MonitoreoLOGS\bin\Release\MonitoreoLOGS.xml
+D:\TN\Desarrollos\Proyectos\MonitoreoDeLogsRepo\MonitoreoLOGS\bin\Release\EnvioCorreo.dll
+D:\TN\Desarrollos\Proyectos\MonitoreoDeLogsRepo\MonitoreoLOGS\bin\Release\EnvioCorreo.pdb
+D:\TN\Desarrollos\Proyectos\MonitoreoDeLogsRepo\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.vbprojAssemblyReference.cache
+D:\TN\Desarrollos\Proyectos\MonitoreoDeLogsRepo\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.frmMain.resources
+D:\TN\Desarrollos\Proyectos\MonitoreoDeLogsRepo\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.Resources.resources
+D:\TN\Desarrollos\Proyectos\MonitoreoDeLogsRepo\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.vbproj.GenerateResource.cache
+D:\TN\Desarrollos\Proyectos\MonitoreoDeLogsRepo\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.vbproj.CoreCompileInputs.cache
+D:\TN\Desarrollos\Proyectos\MonitoreoDeLogsRepo\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.vbproj.CopyComplete
+D:\TN\Desarrollos\Proyectos\MonitoreoDeLogsRepo\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.exe
+D:\TN\Desarrollos\Proyectos\MonitoreoDeLogsRepo\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.xml
+D:\TN\Desarrollos\Proyectos\MonitoreoDeLogsRepo\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.pdb
+D:\TN\Desarrollos\Proyectos\MonitoreoDeLogsRepo\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.XmlSerializers.dll

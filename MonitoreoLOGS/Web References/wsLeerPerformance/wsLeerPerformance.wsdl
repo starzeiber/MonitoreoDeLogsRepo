@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Autorizadas">
+        <s:complexType />
+      </s:element>
+      <s:element name="AutorizadasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AutorizadasResult" type="tns:MonitoreoData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="MonitoreoData">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="contador" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombreServidor" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Codigo_2">
+        <s:complexType />
+      </s:element>
+      <s:element name="Codigo_2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Codigo_2Result" type="tns:MonitoreoData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Codigo_5">
+        <s:complexType />
+      </s:element>
+      <s:element name="Codigo_5Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Codigo_5Result" type="tns:MonitoreoData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Codigo_35">
+        <s:complexType />
+      </s:element>
+      <s:element name="Codigo_35Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Codigo_35Result" type="tns:MonitoreoData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Codigo_6">
+        <s:complexType />
+      </s:element>
+      <s:element name="Codigo_6Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Codigo_6Result" type="tns:MonitoreoData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Codigo_65">
+        <s:complexType />
+      </s:element>
+      <s:element name="Codigo_65Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Codigo_65Result" type="tns:MonitoreoData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Codigo_66">
+        <s:complexType />
+      </s:element>
+      <s:element name="Codigo_66Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Codigo_66Result" type="tns:MonitoreoData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Codigo_67">
+        <s:complexType />
+      </s:element>
+      <s:element name="Codigo_67Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Codigo_67Result" type="tns:MonitoreoData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Codigo_70">
+        <s:complexType />
+      </s:element>
+      <s:element name="Codigo_70Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Codigo_70Result" type="tns:MonitoreoData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Codigo_71">
+        <s:complexType />
+      </s:element>
+      <s:element name="Codigo_71Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Codigo_71Result" type="tns:MonitoreoData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Codigo_72">
+        <s:complexType />
+      </s:element>
+      <s:element name="Codigo_72Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Codigo_72Result" type="tns:MonitoreoData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Codigo_73">
+        <s:complexType />
+      </s:element>
+      <s:element name="Codigo_73Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Codigo_73Result" type="tns:MonitoreoData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Codigo_74">
+        <s:complexType />
+      </s:element>
+      <s:element name="Codigo_74Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Codigo_74Result" type="tns:MonitoreoData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Codigo_8">
+        <s:complexType />
+      </s:element>
+      <s:element name="Codigo_8Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Codigo_8Result" type="tns:MonitoreoData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Codigo_87">
+        <s:complexType />
+      </s:element>
+      <s:element name="Codigo_87Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Codigo_87Result" type="tns:MonitoreoData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Codigo_Varios">
+        <s:complexType />
+      </s:element>
+      <s:element name="Codigo_VariosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Codigo_VariosResult" type="tns:MonitoreoData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PuertoDisponible">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sPTO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PuertoDisponibleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PuertoDisponibleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Codigo_11">
+        <s:complexType />
+      </s:element>
+      <s:element name="Codigo_11Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Codigo_11Result" type="tns:MonitoreoData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EnvioCorreoEspecial">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="configuracionMail" type="tns:configuracionMail" />
+            <s:element minOccurs="0" maxOccurs="1" name="titulo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="esError" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="configuracionMail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="smtp" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="conCertificado" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="puerto" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="listaDestinatarios" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="listaDestinatariosError" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="remitente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="pathLogo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EnvioCorreoEspecialResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EnvioCorreoEspecialResult" type="tns:RespuestaCorreo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RespuestaCorreo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="esExitoso" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="DescripcionError" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AutorizadasSoapIn">
+    <wsdl:part name="parameters" element="tns:Autorizadas" />
+  </wsdl:message>
+  <wsdl:message name="AutorizadasSoapOut">
+    <wsdl:part name="parameters" element="tns:AutorizadasResponse" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_2SoapIn">
+    <wsdl:part name="parameters" element="tns:Codigo_2" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_2SoapOut">
+    <wsdl:part name="parameters" element="tns:Codigo_2Response" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_5SoapIn">
+    <wsdl:part name="parameters" element="tns:Codigo_5" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_5SoapOut">
+    <wsdl:part name="parameters" element="tns:Codigo_5Response" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_35SoapIn">
+    <wsdl:part name="parameters" element="tns:Codigo_35" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_35SoapOut">
+    <wsdl:part name="parameters" element="tns:Codigo_35Response" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_6SoapIn">
+    <wsdl:part name="parameters" element="tns:Codigo_6" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_6SoapOut">
+    <wsdl:part name="parameters" element="tns:Codigo_6Response" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_65SoapIn">
+    <wsdl:part name="parameters" element="tns:Codigo_65" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_65SoapOut">
+    <wsdl:part name="parameters" element="tns:Codigo_65Response" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_66SoapIn">
+    <wsdl:part name="parameters" element="tns:Codigo_66" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_66SoapOut">
+    <wsdl:part name="parameters" element="tns:Codigo_66Response" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_67SoapIn">
+    <wsdl:part name="parameters" element="tns:Codigo_67" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_67SoapOut">
+    <wsdl:part name="parameters" element="tns:Codigo_67Response" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_70SoapIn">
+    <wsdl:part name="parameters" element="tns:Codigo_70" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_70SoapOut">
+    <wsdl:part name="parameters" element="tns:Codigo_70Response" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_71SoapIn">
+    <wsdl:part name="parameters" element="tns:Codigo_71" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_71SoapOut">
+    <wsdl:part name="parameters" element="tns:Codigo_71Response" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_72SoapIn">
+    <wsdl:part name="parameters" element="tns:Codigo_72" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_72SoapOut">
+    <wsdl:part name="parameters" element="tns:Codigo_72Response" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_73SoapIn">
+    <wsdl:part name="parameters" element="tns:Codigo_73" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_73SoapOut">
+    <wsdl:part name="parameters" element="tns:Codigo_73Response" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_74SoapIn">
+    <wsdl:part name="parameters" element="tns:Codigo_74" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_74SoapOut">
+    <wsdl:part name="parameters" element="tns:Codigo_74Response" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_8SoapIn">
+    <wsdl:part name="parameters" element="tns:Codigo_8" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_8SoapOut">
+    <wsdl:part name="parameters" element="tns:Codigo_8Response" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_87SoapIn">
+    <wsdl:part name="parameters" element="tns:Codigo_87" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_87SoapOut">
+    <wsdl:part name="parameters" element="tns:Codigo_87Response" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_VariosSoapIn">
+    <wsdl:part name="parameters" element="tns:Codigo_Varios" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_VariosSoapOut">
+    <wsdl:part name="parameters" element="tns:Codigo_VariosResponse" />
+  </wsdl:message>
+  <wsdl:message name="PuertoDisponibleSoapIn">
+    <wsdl:part name="parameters" element="tns:PuertoDisponible" />
+  </wsdl:message>
+  <wsdl:message name="PuertoDisponibleSoapOut">
+    <wsdl:part name="parameters" element="tns:PuertoDisponibleResponse" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_11SoapIn">
+    <wsdl:part name="parameters" element="tns:Codigo_11" />
+  </wsdl:message>
+  <wsdl:message name="Codigo_11SoapOut">
+    <wsdl:part name="parameters" element="tns:Codigo_11Response" />
+  </wsdl:message>
+  <wsdl:message name="EnvioCorreoEspecialSoapIn">
+    <wsdl:part name="parameters" element="tns:EnvioCorreoEspecial" />
+  </wsdl:message>
+  <wsdl:message name="EnvioCorreoEspecialSoapOut">
+    <wsdl:part name="parameters" element="tns:EnvioCorreoEspecialResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsLeerPerformanceSoap">
+    <wsdl:operation name="Autorizadas">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtiene el número de transacciones con código 00</wsdl:documentation>
+      <wsdl:input message="tns:AutorizadasSoapIn" />
+      <wsdl:output message="tns:AutorizadasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtiene el número de transacciones con código 02</wsdl:documentation>
+      <wsdl:input message="tns:Codigo_2SoapIn" />
+      <wsdl:output message="tns:Codigo_2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_5">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtiene el número de transacciones con código 05</wsdl:documentation>
+      <wsdl:input message="tns:Codigo_5SoapIn" />
+      <wsdl:output message="tns:Codigo_5SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_35">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtiene el número de transacciones con código 35</wsdl:documentation>
+      <wsdl:input message="tns:Codigo_35SoapIn" />
+      <wsdl:output message="tns:Codigo_35SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_6">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtiene el número de transacciones con código 06</wsdl:documentation>
+      <wsdl:input message="tns:Codigo_6SoapIn" />
+      <wsdl:output message="tns:Codigo_6SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_65">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtiene el número de transacciones con código 65</wsdl:documentation>
+      <wsdl:input message="tns:Codigo_65SoapIn" />
+      <wsdl:output message="tns:Codigo_65SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_66">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtiene el número de transacciones con código 66</wsdl:documentation>
+      <wsdl:input message="tns:Codigo_66SoapIn" />
+      <wsdl:output message="tns:Codigo_66SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_67">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtiene el número de transacciones con código 67</wsdl:documentation>
+      <wsdl:input message="tns:Codigo_67SoapIn" />
+      <wsdl:output message="tns:Codigo_67SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_70">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtiene el número de transacciones con código 70</wsdl:documentation>
+      <wsdl:input message="tns:Codigo_70SoapIn" />
+      <wsdl:output message="tns:Codigo_70SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_71">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtiene el número de transacciones con código 71</wsdl:documentation>
+      <wsdl:input message="tns:Codigo_71SoapIn" />
+      <wsdl:output message="tns:Codigo_71SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_72">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtiene el número de transacciones con código 72</wsdl:documentation>
+      <wsdl:input message="tns:Codigo_72SoapIn" />
+      <wsdl:output message="tns:Codigo_72SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_73">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtiene el número de transacciones con código 73</wsdl:documentation>
+      <wsdl:input message="tns:Codigo_73SoapIn" />
+      <wsdl:output message="tns:Codigo_73SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_74">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtiene el número de transacciones con código 74</wsdl:documentation>
+      <wsdl:input message="tns:Codigo_74SoapIn" />
+      <wsdl:output message="tns:Codigo_74SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_8">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtiene el número de transacciones con código 8</wsdl:documentation>
+      <wsdl:input message="tns:Codigo_8SoapIn" />
+      <wsdl:output message="tns:Codigo_8SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_87">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtiene el número de transacciones con código 87</wsdl:documentation>
+      <wsdl:input message="tns:Codigo_87SoapIn" />
+      <wsdl:output message="tns:Codigo_87SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_Varios">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtiene el número de transacciones con código genérico por intermitencias ligeras</wsdl:documentation>
+      <wsdl:input message="tns:Codigo_VariosSoapIn" />
+      <wsdl:output message="tns:Codigo_VariosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PuertoDisponible">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que realiza la comprobación de un puerto</wsdl:documentation>
+      <wsdl:input message="tns:PuertoDisponibleSoapIn" />
+      <wsdl:output message="tns:PuertoDisponibleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_11">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtiene el número de transacciones con código 11</wsdl:documentation>
+      <wsdl:input message="tns:Codigo_11SoapIn" />
+      <wsdl:output message="tns:Codigo_11SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EnvioCorreoEspecial">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Solo para envía de correo de apps que no tienen salida de SMTP</wsdl:documentation>
+      <wsdl:input message="tns:EnvioCorreoEspecialSoapIn" />
+      <wsdl:output message="tns:EnvioCorreoEspecialSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsLeerPerformanceSoap" type="tns:wsLeerPerformanceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Autorizadas">
+      <soap:operation soapAction="http://tempuri.org/Autorizadas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_2">
+      <soap:operation soapAction="http://tempuri.org/Codigo_2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_5">
+      <soap:operation soapAction="http://tempuri.org/Codigo_5" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_35">
+      <soap:operation soapAction="http://tempuri.org/Codigo_35" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_6">
+      <soap:operation soapAction="http://tempuri.org/Codigo_6" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_65">
+      <soap:operation soapAction="http://tempuri.org/Codigo_65" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_66">
+      <soap:operation soapAction="http://tempuri.org/Codigo_66" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_67">
+      <soap:operation soapAction="http://tempuri.org/Codigo_67" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_70">
+      <soap:operation soapAction="http://tempuri.org/Codigo_70" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_71">
+      <soap:operation soapAction="http://tempuri.org/Codigo_71" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_72">
+      <soap:operation soapAction="http://tempuri.org/Codigo_72" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_73">
+      <soap:operation soapAction="http://tempuri.org/Codigo_73" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_74">
+      <soap:operation soapAction="http://tempuri.org/Codigo_74" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_8">
+      <soap:operation soapAction="http://tempuri.org/Codigo_8" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_87">
+      <soap:operation soapAction="http://tempuri.org/Codigo_87" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_Varios">
+      <soap:operation soapAction="http://tempuri.org/Codigo_Varios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PuertoDisponible">
+      <soap:operation soapAction="http://tempuri.org/PuertoDisponible" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_11">
+      <soap:operation soapAction="http://tempuri.org/Codigo_11" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnvioCorreoEspecial">
+      <soap:operation soapAction="http://tempuri.org/EnvioCorreoEspecial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsLeerPerformanceSoap12" type="tns:wsLeerPerformanceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Autorizadas">
+      <soap12:operation soapAction="http://tempuri.org/Autorizadas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_2">
+      <soap12:operation soapAction="http://tempuri.org/Codigo_2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_5">
+      <soap12:operation soapAction="http://tempuri.org/Codigo_5" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_35">
+      <soap12:operation soapAction="http://tempuri.org/Codigo_35" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_6">
+      <soap12:operation soapAction="http://tempuri.org/Codigo_6" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_65">
+      <soap12:operation soapAction="http://tempuri.org/Codigo_65" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_66">
+      <soap12:operation soapAction="http://tempuri.org/Codigo_66" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_67">
+      <soap12:operation soapAction="http://tempuri.org/Codigo_67" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_70">
+      <soap12:operation soapAction="http://tempuri.org/Codigo_70" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_71">
+      <soap12:operation soapAction="http://tempuri.org/Codigo_71" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_72">
+      <soap12:operation soapAction="http://tempuri.org/Codigo_72" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_73">
+      <soap12:operation soapAction="http://tempuri.org/Codigo_73" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_74">
+      <soap12:operation soapAction="http://tempuri.org/Codigo_74" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_8">
+      <soap12:operation soapAction="http://tempuri.org/Codigo_8" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_87">
+      <soap12:operation soapAction="http://tempuri.org/Codigo_87" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_Varios">
+      <soap12:operation soapAction="http://tempuri.org/Codigo_Varios" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PuertoDisponible">
+      <soap12:operation soapAction="http://tempuri.org/PuertoDisponible" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Codigo_11">
+      <soap12:operation soapAction="http://tempuri.org/Codigo_11" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnvioCorreoEspecial">
+      <soap12:operation soapAction="http://tempuri.org/EnvioCorreoEspecial" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsLeerPerformance">
+    <wsdl:port name="wsLeerPerformanceSoap" binding="tns:wsLeerPerformanceSoap">
+      <soap:address location="http://localhost:58512/wsLeerPerformance.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsLeerPerformanceSoap12" binding="tns:wsLeerPerformanceSoap12">
+      <soap12:address location="http://localhost:58512/wsLeerPerformance.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
