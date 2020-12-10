@@ -328,6 +328,7 @@ Public Class frmMain
                         End If
                     End If
                 Next
+                oMyLog.WriteEntry("lContadorTrxNoExitosa: " + lContadorTrxNoExitosa.ToString())
 
                 '@070613 si el log no contiene entradas
                 If oEntry Is Nothing Then
@@ -358,6 +359,7 @@ Public Class frmMain
         Dim xmlDocumento As New XmlDocument()
         Dim xmlNodo As XmlNode
         Try
+
             For n = 0 To Len(XMLstring) - 1
                 If XMLstring.Chars(n) = "<" Then
                     XMLstring = XMLstring.Substring(n)
@@ -384,7 +386,6 @@ Public Class frmMain
             End If
 
         Catch ex As Exception
-            oMyLog.WriteEntry("Error al leer el log XML: " + ex.Message)
             Return 666
         End Try
 

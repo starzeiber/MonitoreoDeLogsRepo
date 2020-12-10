@@ -104,7 +104,6 @@ C:\Users\URIEL\Documents\GitHub\MonitoreoDeLogsRepo\MonitoreoLOGS\bin\Release\Mo
 C:\Users\URIEL\Documents\GitHub\MonitoreoDeLogsRepo\MonitoreoLOGS\bin\Release\MonitoreoLOGS.xml
 C:\Users\URIEL\Documents\GitHub\MonitoreoDeLogsRepo\MonitoreoLOGS\bin\Release\EnvioCorreo.dll
 C:\Users\URIEL\Documents\GitHub\MonitoreoDeLogsRepo\MonitoreoLOGS\bin\Release\EnvioCorreo.pdb
-C:\Users\URIEL\Documents\GitHub\MonitoreoDeLogsRepo\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.vbprojAssemblyReference.cache
 C:\Users\URIEL\Documents\GitHub\MonitoreoDeLogsRepo\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.frmMain.resources
 C:\Users\URIEL\Documents\GitHub\MonitoreoDeLogsRepo\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.Resources.resources
 C:\Users\URIEL\Documents\GitHub\MonitoreoDeLogsRepo\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.vbproj.GenerateResource.cache
