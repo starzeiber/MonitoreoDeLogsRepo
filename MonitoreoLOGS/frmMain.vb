@@ -1,6 +1,7 @@
 ﻿Imports System.Globalization
 Imports System.IO
 Imports System.Configuration
+Imports System.Xml
 
 ''' <summary>
 ''' Clase que realiza un monitoreo de los logs en los visores de sucesos
@@ -209,7 +210,7 @@ Public Class frmMain
             Finally
                 GC.Collect()
             End Try
-        Else
+        ElseIf RadioButton_TPV.Checked = True Then
             Try
                 '@070613 si existe se instancia otra variable que lea cualquier evento dentro de un log
                 Dim oLog As EventLog = New EventLog
@@ -281,7 +282,112 @@ Public Class frmMain
             Finally
                 GC.Collect()
             End Try
+        Else
+            Try
+                '@070613 si existe se instancia otra variable que lea cualquier evento dentro de un log
+                Dim oLog As EventLog = New EventLog
+                '@070613 el log a leer
+                oLog.Log = sNombreLOG
+
+                '@070613 variable que guarda el último log leido
+                Dim sUltimoRegaux As String = ""
+                '@070613 se instancia otra variable que lea cada registro
+                'Dim oEntry As EventLogEntry = Nothing
+
+                '@070613 dado que el evento tendrá muchas entradas al momento de ejecutarse el programa, se traerá todas para no afectar el rendimiento del server
+                For Each oEntry In oLog.Entries
+                    entradaLog = oEntry.Message
+                    If oEntry.Message.Length > 29 Then
+                        '@070613 dado que cada vez que se ejecute leería duplicadamente los registros se compara el ultimo registro leido en el recorrido previo tomando como referencia su fecha
+                        '@091118 ejemplo: 2018/11/07 09:01:56.509625
+                        If oEntry.Message.Substring(0, 24) = sUltimoReg Then
+                            lContadorTrxExitosa = 0
+                            lContadorTrxNoExitosa = 0
+
+                            Dim codigoRespuesta As Integer = LeerXML(oEntry.Message)
+                            '@070613 una vez que se tienen todas las entradas revisamos su contenido una por una para buscar si el mensaje 14 es exitoso
+                            If codigoRespuesta = 0 Then
+                                lContadorTrxExitosa = lContadorTrxExitosa + 1
+                            ElseIf codigoRespuesta = 6 Then
+                                lContadorTrxNoExitosa = lContadorTrxNoExitosa + 1
+                            End If
+
+                            '@070613 se graba el ultimo registro leido
+                            sUltimoRegaux = oEntry.Message.Substring(0, 24)
+                        Else '@070613 lo unico que se hace es descartar lo que ya se pudiera haber leido
+                            '@070613 una vez que se tienen todas las entradas revisamos su contenido una por una para buscar si el mensaje 14 es exitoso
+                            Dim codigoRespuesta As Integer = LeerXML(oEntry.Message)
+                            '@070613 una vez que se tienen todas las entradas revisamos su contenido una por una para buscar si el mensaje 14 es exitoso
+                            If codigoRespuesta = 0 Then
+                                lContadorTrxExitosa = lContadorTrxExitosa + 1
+                            ElseIf codigoRespuesta = 6 Then
+                                lContadorTrxNoExitosa = lContadorTrxNoExitosa + 1
+                            End If
+                            '@070613 se graba el ultimo registro leido
+                            sUltimoRegaux = oEntry.Message.Substring(0, 24)
+                        End If
+                    End If
+                Next
+
+                '@070613 si el log no contiene entradas
+                If oEntry Is Nothing Then
+                    sUltimoRegaux = Date.Now.ToString()
+                    oMyLog.WriteEntry("ultimo registro " & sUltimoReg & " registros tomados " & oLog.Entries.Count)
+                    Return sUltimoRegaux
+                Else
+                    oMyLog.WriteEntry("ultimo registro " & sUltimoReg & " registros tomados " & oLog.Entries.Count)
+                    '@070613 con el ultimo registro leido se empezará el conteo posterior
+                    sUltimoReg = sUltimoRegaux
+                    'Return sUltimoReg.Substring(0, 4) & "/" & sUltimoReg.Substring(4, 2) & "/" & sUltimoReg.Substring(6)
+                    Return sUltimoReg
+                End If
+
+            Catch ex As Exception
+                oMyLog.WriteEntry("Error en FleerLogs: " & ex.Message & ", " & oEntry.Message & ", " & entradaLog, System.Diagnostics.EventLogEntryType.Error)
+                'correo.EnvioCorreo(configuracionCorreo, "Monitoreo " & sNombreCadena, "Error en la aplicación: " & ex.Message & ". Se cerrará por seguridad", True)
+                respuestaCorreo = ws.EnvioCorreoEspecial(configuracionCorreoWS, "Monitoreo " & sNombreCadena, "Error en la aplicación: " & ex.Message & ". Se cerrará por seguridad", True)
+                Application.Exit()
+                Return Date.Now.ToString()
+            Finally
+                GC.Collect()
+            End Try
         End If
+    End Function
+
+    Private Function LeerXML(ByVal XMLstring As String) As Integer
+        Dim xmlDocumento As New XmlDocument()
+        Dim xmlNodo As XmlNode
+        Try
+            For n = 0 To Len(XMLstring) - 1
+                If XMLstring.Chars(n) = "<" Then
+                    XMLstring = XMLstring.Substring(n)
+                    Exit For
+                End If
+            Next n
+
+            xmlDocumento.LoadXml(XMLstring)
+            xmlNodo = xmlDocumento.DocumentElement
+            Dim encabezadoRespuestaSolicitudTae As String = "ReloadResponse"
+            Dim encabezadoRespuestaSolicitudDatos As String = "DataResponse"
+            Dim encabezadoRespuestaConsultaTae As String = "QueryResponse"
+            Dim encabezadoRespuestaConsultaDatos As String = "DataQueryResponse"
+            Dim codigoRespuesta As Integer = 0
+
+            If String.Compare(xmlNodo.ParentNode.LastChild.Name.ToUpper(), encabezadoRespuestaSolicitudTae.ToUpper()) = 0 Or
+            String.Compare(xmlNodo.ParentNode.LastChild.Name.ToUpper(), encabezadoRespuestaSolicitudTae.ToUpper()) = 0 Or
+            String.Compare(xmlNodo.ParentNode.LastChild.Name.ToUpper(), encabezadoRespuestaSolicitudTae.ToUpper()) = 0 Or
+            String.Compare(xmlNodo.ParentNode.LastChild.Name.ToUpper(), encabezadoRespuestaSolicitudTae.ToUpper()) = 0 Then
+
+                Return Integer.Parse(xmlNodo("ResponseCode").InnerText)
+            Else
+                Return 1
+            End If
+
+        Catch ex As Exception
+            oMyLog.WriteEntry("Error al leer el log XML: " + ex.Message)
+            Return 666
+        End Try
+
     End Function
 
 #End Region

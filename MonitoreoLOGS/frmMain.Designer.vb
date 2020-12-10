@@ -30,6 +30,7 @@ Partial Class frmMain
         Me.Button_Iniciar = New System.Windows.Forms.Button()
         Me.RadioButton_Px = New System.Windows.Forms.RadioButton()
         Me.RadioButton_TPV = New System.Windows.Forms.RadioButton()
+        Me.RadioButton_Ws = New System.Windows.Forms.RadioButton()
         Me.SuspendLayout()
         '
         'myTimer
@@ -56,7 +57,7 @@ Partial Class frmMain
         '
         'Button_Iniciar
         '
-        Me.Button_Iniciar.Location = New System.Drawing.Point(360, 16)
+        Me.Button_Iniciar.Location = New System.Drawing.Point(431, 12)
         Me.Button_Iniciar.Name = "Button_Iniciar"
         Me.Button_Iniciar.Size = New System.Drawing.Size(75, 23)
         Me.Button_Iniciar.TabIndex = 2
@@ -86,11 +87,23 @@ Partial Class frmMain
         Me.RadioButton_TPV.Text = "TPV"
         Me.RadioButton_TPV.UseVisualStyleBackColor = True
         '
+        'RadioButton_Ws
+        '
+        Me.RadioButton_Ws.AutoSize = True
+        Me.RadioButton_Ws.Location = New System.Drawing.Point(353, 15)
+        Me.RadioButton_Ws.Name = "RadioButton_Ws"
+        Me.RadioButton_Ws.Size = New System.Drawing.Size(43, 17)
+        Me.RadioButton_Ws.TabIndex = 5
+        Me.RadioButton_Ws.TabStop = True
+        Me.RadioButton_Ws.Text = "WS"
+        Me.RadioButton_Ws.UseVisualStyleBackColor = True
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(461, 68)
+        Me.ClientSize = New System.Drawing.Size(529, 68)
+        Me.Controls.Add(Me.RadioButton_Ws)
         Me.Controls.Add(Me.RadioButton_TPV)
         Me.Controls.Add(Me.RadioButton_Px)
         Me.Controls.Add(Me.Button_Iniciar)
@@ -109,4 +122,5 @@ Partial Class frmMain
     Friend WithEvents Button_Iniciar As Button
     Friend WithEvents RadioButton_Px As RadioButton
     Friend WithEvents RadioButton_TPV As RadioButton
+    Friend WithEvents RadioButton_Ws As RadioButton
 End Class

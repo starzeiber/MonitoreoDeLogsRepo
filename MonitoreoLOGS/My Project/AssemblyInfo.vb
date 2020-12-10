@@ -31,14 +31,17 @@ Imports System.Runtime.InteropServices
 ' mediante el asterisco ('*'), como se muestra a continuación:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-'Siglas Autor   Fecha   Versión     Descripción
-'@      UMB   120613    1.0.0.0     se crea la aplicación que lee los registros de un log especificamente indicado evaluando su respuesta como transacción exitosa o no y envia correo de reporte
-'@      UMB   200613    2.0.0.0     se comienza la restructuración del programa para que sea monitoreo automático y secuencial con liberación de recursos
-'@      UMB   120613    3.0.0.0     se agrupan las funciones para encapsular métodos y realizar una monitoreo con TIMER además de ser configurable por .config
-'@      UMB   180214    3.1.0.0     se agrega un monitoreo especial a Isend en la madrugada y se agrega el log de errores cuando haya excepciones
-'@      UMB   091118    4.0.0.0     Se re estructuró para manejar la mensajería TPV además de la del PX
-'@      UMB   130319    4.1.0.0     Se actualiza la versión de la DLL de correo
-'@      UMB   190319    4.2.0.0     Se cambia el envío de correo de ser desde la aplicación a consumir un ws, por temas de salida a internet
+'Siglas     Autor       Fecha       Versión     Descripción
+'@          UMB         120613      1.0.0.0     se crea la aplicación que lee los registros de un log especificamente indicado evaluando su respuesta como transacción exitosa o no y envia correo de reporte
+'@          UMB         200613      2.0.0.0     se comienza la restructuración del programa para que sea monitoreo automático y secuencial con liberación de recursos
+'@          UMB         120613      3.0.0.0     se agrupan las funciones para encapsular métodos y realizar una monitoreo con TIMER además de ser configurable por .config
+'@          UMB         180214      3.1.0.0     se agrega un monitoreo especial a Isend en la madrugada y se agrega el log de errores cuando haya excepciones
+'@          UMB         091118      4.0.0.0     Se re estructuró para manejar la mensajería TPV además de la del PX
+'@          UMB         130319      4.1.0.0     Se actualiza la versión de la DLL de correo
+'@          UMB         190319      4.2.0.0     Se cambia el envío de correo de ser desde la aplicación a consumir un ws, por temas de salida a internet
+'@          UMB         10/12/2020  5.0.0.0     Versión que revisa los logs de un WS pero solo para código 6
 
-<Assembly: AssemblyVersion("4.2.0.0")>
-<Assembly: AssemblyFileVersion("4.2.0.0")>
+
+
+<Assembly: AssemblyVersion("5.0.0.0")>
+<Assembly: AssemblyFileVersion("5.0.0.0")>
