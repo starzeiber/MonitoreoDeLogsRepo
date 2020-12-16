@@ -40,8 +40,8 @@ Imports System.Runtime.InteropServices
 '@          UMB         130319      4.1.0.0     Se actualiza la versión de la DLL de correo
 '@          UMB         190319      4.2.0.0     Se cambia el envío de correo de ser desde la aplicación a consumir un ws, por temas de salida a internet
 '@          UMB         10/12/2020  5.0.0.0     Versión que revisa los logs de un WS pero solo para código 6
+'@          UMB         16/12/2020  5.1.0.0     Se reestable el envío de correo por la DLL
 
 
-
-<Assembly: AssemblyVersion("5.0.0.0")>
-<Assembly: AssemblyFileVersion("5.0.0.0")>
+<Assembly: AssemblyVersion("5.1.0.0")>
+<Assembly: AssemblyFileVersion("5.1.0.0")>

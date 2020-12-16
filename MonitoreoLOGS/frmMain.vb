@@ -48,11 +48,11 @@ Public Class frmMain
     ' ''' <remarks></remarks>
     Private sNombreCadena As String
 
-    'Private correo As New EnvioCorreo.EnviarCorreo
+    Private correo As New EnvioCorreo.EnviarCorreo
 
     Private configuracionCorreo As New EnvioCorreo.ConfiguracionCorreo
 
-    Public ws As New wsLeerPerformance.wsLeerPerformance()
+    'Public ws As New wsLeerPerformance.wsLeerPerformance()
     Public configuracionCorreoWS As New wsLeerPerformance.configuracionMail()
     Public respuestaCorreo As New wsLeerPerformance.RespuestaCorreo()
 
@@ -62,7 +62,7 @@ Public Class frmMain
 
     Private Function CargaInicial(ByRef respuesta As String) As Boolean
         Try
-            ws.Url = ConfigurationManager.AppSettings("urlCorreo")
+            'ws.Url = ConfigurationManager.AppSettings("urlCorreo")
             iIntervaloMonitoreo = Integer.Parse(ConfigurationManager.AppSettings("TiempoIntervalo")) * 60000
             iTiempoMaxNoVentas = Integer.Parse(ConfigurationManager.AppSettings("TiempoIntervalo"))
             iHoraInicioMonitoreo = Integer.Parse(ConfigurationManager.AppSettings("Hora_Inicio_Monitoreo"))
@@ -203,8 +203,8 @@ Public Class frmMain
 
             Catch ex As Exception
                 oMyLog.WriteEntry("Error en FleerLogs: " & ex.Message & ", " & oEntry.Message & ", " & entradaLog, System.Diagnostics.EventLogEntryType.Error)
-                'correo.EnvioCorreo(configuracionCorreo, "Monitoreo " & sNombreCadena, "Error en la aplicación: " & ex.Message & ". Se cerrará por seguridad", True)
-                respuestaCorreo = ws.EnvioCorreoEspecial(configuracionCorreoWS, "Monitoreo " & sNombreCadena, "Error en la aplicación: " & ex.Message & ". Se cerrará por seguridad", True)
+                correo.EnvioCorreo(configuracionCorreo, "Monitoreo " & sNombreCadena, "Error en la aplicación: " & ex.Message & ". Se cerrará por seguridad", True)
+                'respuestaCorreo = ws.EnvioCorreoEspecial(configuracionCorreoWS, "Monitoreo " & sNombreCadena, "Error en la aplicación: " & ex.Message & ". Se cerrará por seguridad", True)
                 Application.Exit()
                 Return Date.Now.ToString()
             Finally
@@ -275,8 +275,8 @@ Public Class frmMain
 
             Catch ex As Exception
                 oMyLog.WriteEntry("Error en FleerLogs: " & ex.Message & ", " & oEntry.Message & ", " & entradaLog, System.Diagnostics.EventLogEntryType.Error)
-                'correo.EnvioCorreo(configuracionCorreo, "Monitoreo " & sNombreCadena, "Error en la aplicación: " & ex.Message & ". Se cerrará por seguridad", True)
-                respuestaCorreo = ws.EnvioCorreoEspecial(configuracionCorreoWS, "Monitoreo " & sNombreCadena, "Error en la aplicación: " & ex.Message & ". Se cerrará por seguridad", True)
+                correo.EnvioCorreo(configuracionCorreo, "Monitoreo " & sNombreCadena, "Error en la aplicación: " & ex.Message & ". Se cerrará por seguridad", True)
+                'respuestaCorreo = ws.EnvioCorreoEspecial(configuracionCorreoWS, "Monitoreo " & sNombreCadena, "Error en la aplicación: " & ex.Message & ". Se cerrará por seguridad", True)
                 Application.Exit()
                 Return Date.Now.ToString()
             Finally
@@ -345,8 +345,8 @@ Public Class frmMain
 
             Catch ex As Exception
                 oMyLog.WriteEntry("Error en FleerLogs: " & ex.Message & ", " & oEntry.Message & ", " & entradaLog, System.Diagnostics.EventLogEntryType.Error)
-                'correo.EnvioCorreo(configuracionCorreo, "Monitoreo " & sNombreCadena, "Error en la aplicación: " & ex.Message & ". Se cerrará por seguridad", True)
-                respuestaCorreo = ws.EnvioCorreoEspecial(configuracionCorreoWS, "Monitoreo " & sNombreCadena, "Error en la aplicación: " & ex.Message & ". Se cerrará por seguridad", True)
+                correo.EnvioCorreo(configuracionCorreo, "Monitoreo " & sNombreCadena, "Error en la aplicación: " & ex.Message & ". Se cerrará por seguridad", True)
+                'respuestaCorreo = ws.EnvioCorreoEspecial(configuracionCorreoWS, "Monitoreo " & sNombreCadena, "Error en la aplicación: " & ex.Message & ". Se cerrará por seguridad", True)
                 Application.Exit()
                 Return Date.Now.ToString()
             Finally
@@ -463,8 +463,8 @@ Public Class frmMain
         Catch ex As Exception
             '@070613 cualquier error se escribe a nuestro log
             oMyLog.WriteEntry("Error en mytime.tick" & ex.Message, System.Diagnostics.EventLogEntryType.Error)
-            'correo.EnvioCorreo(configuracionCorreo, "Monitoreo " & sNombreCadena, "Error en la aplicación: " & ex.Message & ". Se cerrará por seguridad", True)
-            respuestaCorreo = ws.EnvioCorreoEspecial(configuracionCorreoWS, "Monitoreo " & sNombreCadena, "Error en la aplicación: " & ex.Message & ". Se cerrará por seguridad", True)
+            correo.EnvioCorreo(configuracionCorreo, "Monitoreo " & sNombreCadena, "Error en la aplicación: " & ex.Message & ". Se cerrará por seguridad", True)
+            'respuestaCorreo = ws.EnvioCorreoEspecial(configuracionCorreoWS, "Monitoreo " & sNombreCadena, "Error en la aplicación: " & ex.Message & ". Se cerrará por seguridad", True)
             Application.Exit()
         Finally
             GC.Collect()
@@ -479,11 +479,11 @@ Public Class frmMain
             Dim splitResultado() As String
             splitResultado = e.Result.ToString.Split(New Char() {"|"})
             If splitResultado(0) = "0" And splitResultado(1) = "0" Then
-                'correo.EnvioCorreo(configuracionCorreo, "Monitoreo " & sNombreCadena, "No se han detectado ventas en el log " & TextBox_NombreLog.Text & " en mas de " & iTiempoMaxNoVentas & " minutos", True)
-                respuestaCorreo = ws.EnvioCorreoEspecial(configuracionCorreoWS, "Monitoreo " & sNombreCadena, "No se han detectado ventas en el log " & TextBox_NombreLog.Text & " en mas de " & iTiempoMaxNoVentas & " minutos", True)
+                correo.EnvioCorreo(configuracionCorreo, "Monitoreo " & sNombreCadena, "No se han detectado ventas en el log " & TextBox_NombreLog.Text & " en mas de " & iTiempoMaxNoVentas & " minutos", True)
+                'respuestaCorreo = ws.EnvioCorreoEspecial(configuracionCorreoWS, "Monitoreo " & sNombreCadena, "No se han detectado ventas en el log " & TextBox_NombreLog.Text & " en mas de " & iTiempoMaxNoVentas & " minutos", True)
             ElseIf Integer.Parse(splitResultado(1)) > numeroTrxErrorValidacion Then
-                'correo.EnvioCorreo(configuracionCorreo, "Monitoreo " & sNombreCadena, "Se han detectado más de 10 transacciones con error en el log " & TextBox_NombreLog.Text & " en el último periodo de " & iTiempoMaxNoVentas & " minutos", True)
-                respuestaCorreo = ws.EnvioCorreoEspecial(configuracionCorreoWS, "Monitoreo " & sNombreCadena, "Se han detectado más de 10 transacciones con error en el log " & TextBox_NombreLog.Text & " en el último periodo de " & iTiempoMaxNoVentas & " minutos", True)
+                correo.EnvioCorreo(configuracionCorreo, "Monitoreo " & sNombreCadena, "Se han detectado más de 10 transacciones con error en el log " & TextBox_NombreLog.Text & " en el último periodo de " & iTiempoMaxNoVentas & " minutos", True)
+                'respuestaCorreo = ws.EnvioCorreoEspecial(configuracionCorreoWS, "Monitoreo " & sNombreCadena, "Se han detectado más de 10 transacciones con error en el log " & TextBox_NombreLog.Text & " en el último periodo de " & iTiempoMaxNoVentas & " minutos", True)
             End If
         End If
     End Sub
