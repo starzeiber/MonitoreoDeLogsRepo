@@ -482,7 +482,7 @@ Public Class frmMain
                 correo.EnvioCorreo(configuracionCorreo, "Monitoreo " & sNombreCadena, "No se han detectado ventas en el log " & TextBox_NombreLog.Text & " en mas de " & iTiempoMaxNoVentas & " minutos", True)
                 'respuestaCorreo = ws.EnvioCorreoEspecial(configuracionCorreoWS, "Monitoreo " & sNombreCadena, "No se han detectado ventas en el log " & TextBox_NombreLog.Text & " en mas de " & iTiempoMaxNoVentas & " minutos", True)
             ElseIf Integer.Parse(splitResultado(1)) > numeroTrxErrorValidacion Then
-                correo.EnvioCorreo(configuracionCorreo, "Monitoreo " & sNombreCadena, "Se han detectado más de 10 transacciones con error en el log " & TextBox_NombreLog.Text & " en el último periodo de " & iTiempoMaxNoVentas & " minutos", True)
+                correo.EnvioCorreo(configuracionCorreo, "Monitoreo " & sNombreCadena, "Se han detectado " & splitResultado(1).ToString() & " transacciones con error en el log " & TextBox_NombreLog.Text & " en el último periodo de " & iTiempoMaxNoVentas & " minutos", True)
                 'respuestaCorreo = ws.EnvioCorreoEspecial(configuracionCorreoWS, "Monitoreo " & sNombreCadena, "Se han detectado más de 10 transacciones con error en el log " & TextBox_NombreLog.Text & " en el último periodo de " & iTiempoMaxNoVentas & " minutos", True)
             End If
         End If
