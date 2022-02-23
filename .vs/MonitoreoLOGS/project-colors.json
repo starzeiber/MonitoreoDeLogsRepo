@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "8ef8cb74-1ba8-40d2-8bed-f56198f2fa53": {
+      "ProjectGuid": "8ef8cb74-1ba8-40d2-8bed-f56198f2fa53",
+      "DisplayName": "LogMonitor",
+      "ColorIndex": 0
+    },
+    "2868a425-6e3a-4870-aa9f-63f550c94ccb": {
+      "ProjectGuid": "2868a425-6e3a-4870-aa9f-63f550c94ccb",
+      "DisplayName": "BusinessLayer",
+      "ColorIndex": 1
+    },
+    "bd3fd151-0f56-4578-8878-b19687917489": {
+      "ProjectGuid": "bd3fd151-0f56-4578-8878-b19687917489",
+      "DisplayName": "MonitoreoLOGS",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Archivos varios",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 3
+}

@@ -1,5 +1,4 @@
-﻿Imports System
-Imports System.Reflection
+﻿Imports System.Reflection
 Imports System.Runtime.InteropServices
 
 ' La información general sobre un ensamblado se controla mediante el siguiente 
@@ -8,14 +7,14 @@ Imports System.Runtime.InteropServices
 
 ' Revisar los valores de los atributos del ensamblado
 
-<Assembly: AssemblyTitle("MonitoreoLOGS")> 
-<Assembly: AssemblyDescription("monitoreo de logs")> 
-<Assembly: AssemblyCompany("TN")> 
-<Assembly: AssemblyProduct("MonitoreoLOGS")> 
-<Assembly: AssemblyCopyright("Copyright ©  2013")> 
-<Assembly: AssemblyTrademark("UMB")> 
+<Assembly: AssemblyTitle("MonitoreoLOGS")>
+<Assembly: AssemblyDescription("monitoreo de logs")>
+<Assembly: AssemblyCompany("TN")>
+<Assembly: AssemblyProduct("MonitoreoLOGS")>
+<Assembly: AssemblyCopyright("Copyright ©  2013")>
+<Assembly: AssemblyTrademark("UMB")>
 
-<Assembly: ComVisible(True)> 
+<Assembly: ComVisible(True)>
 
 'El siguiente GUID sirve como identificador de typelib si este proyecto se expone a COM
 <Assembly: Guid("8050ef48-d1a3-4df1-b2b0-0f3aa03f44f7")>

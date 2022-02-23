@@ -114,3 +114,11 @@ C:\Users\URIEL\Documents\GitHub\MonitoreoDeLogsRepo\MonitoreoLOGS\obj\x86\Releas
 C:\Users\URIEL\Documents\GitHub\MonitoreoDeLogsRepo\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.xml
 C:\Users\URIEL\Documents\GitHub\MonitoreoDeLogsRepo\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.pdb
 C:\Users\URIEL\Documents\GitHub\MonitoreoDeLogsRepo\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.XmlSerializers.dll
+C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.vbproj.AssemblyReference.cache
+C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.frmMain.resources
+C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.Resources.resources
+C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.vbproj.GenerateResource.cache
+C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.vbproj.CoreCompileInputs.cache
+C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.exe
+C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.xml
+C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\MonitoreoLOGS\obj\x86\Release\MonitoreoLOGS.pdb
