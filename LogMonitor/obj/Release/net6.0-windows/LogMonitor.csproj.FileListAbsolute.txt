@@ -1,5 +1,6 @@
 C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\bin\Release\net6.0-windows\LogMonitor.exe
 C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\bin\Release\net6.0-windows\appsettings.json
+C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\bin\Release\net6.0-windows\Version.txt
 C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\bin\Release\net6.0-windows\LogMonitor.deps.json
 C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\bin\Release\net6.0-windows\LogMonitor.runtimeconfig.json
 C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\bin\Release\net6.0-windows\LogMonitor.dll
@@ -40,4 +41,3 @@ C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\obj\Releas
 C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\obj\Release\net6.0-windows\LogMonitor.pdb
 C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\obj\Release\net6.0-windows\LogMonitor.genruntimeconfig.cache
 C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\obj\Release\net6.0-windows\ref\LogMonitor.dll
-C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\bin\Release\net6.0-windows\Version.txt

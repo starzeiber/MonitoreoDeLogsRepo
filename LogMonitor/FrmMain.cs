@@ -6,7 +6,7 @@ namespace LogMonitor
 {
     public partial class FrmMain : Form
     {
-        readonly TelegramBotAPI.TelegramBot bot = new("1992248379:AAF2HeCDzRVR2R_4tXdLWMmXwYzhaGUgF5I", "-562147827");
+        TelegramBotAPI.TelegramBot bot;
 
         public FrmMain()
         {
@@ -20,14 +20,21 @@ namespace LogMonitor
                 MessageBox.Show("Error en la carga de configuración inicial, errores en log Application");
                 Environment.Exit(0);
             }
-            var assembly = Assembly.GetExecutingAssembly();
-            var assemblyVersion = assembly.GetName().Version;
-             MessageBox.Show($"AssemblyVersion {assemblyVersion}");
+            try
+            {
+                bot = new("1992248379:AAF2HeCDzRVR2R_4tXdLWMmXwYzhaGUgF5I", "-562147827");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                Environment.Exit(0);
+            }
         }
 
         private void ButtonStart_Click(object sender, EventArgs e)
         {
             buttonStart.Enabled = false;
+            textBoxLogName.Enabled = false;
             timerEach.Interval = Helpers.monitorInterval * 60000;
             bkGrdWkReadLog.RunWorkerAsync();
             timerEach.Start();
@@ -90,6 +97,7 @@ namespace LogMonitor
                 string[] split = e.Result.ToString().Split("|");
                 if (int.Parse(split[1]) > Helpers.numTrxError)
                 {
+                    Helpers.Log("Se detectaron " + int.Parse(split[1]).ToString() + " errores", Helpers.LogType.warnning);
                     Task.Factory.StartNew(() => bot.SendMessageAsync("Se detectaron " + int.Parse(split[1]).ToString() + " codigos de error " +
                         "con el monitor de logs para el cliente " + Helpers.clientName));
                 }

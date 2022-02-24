@@ -1,2 +1,3 @@
 ﻿Simbolo		Autor		Fecha		Version		Descripcion
 @			UMB			23/02/2022	1.0.0		Versión  nueva del monitor de logs totalmente funciona con integración de telegram
+@			UMB			24/02/2022	1.1.0		Corrección de errores e integración del event log

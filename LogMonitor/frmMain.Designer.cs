@@ -134,16 +134,16 @@
             // 
             this.timerEach.Tick += new System.EventHandler(this.TimerEach_Tick);
             // 
-            // frmMain
+            // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(290, 325);
+            this.ClientSize = new System.Drawing.Size(305, 313);
             this.Controls.Add(this.buttonStart);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.textBoxLogName);
             this.Controls.Add(this.label1);
-            this.Name = "frmMain";
+            this.Name = "FrmMain";
             this.Text = "frmMain";
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.groupBox1.ResumeLayout(false);

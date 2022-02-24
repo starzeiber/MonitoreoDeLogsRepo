@@ -21,6 +21,8 @@ namespace LogMonitor
                 IConfigurationRoot? configuration = builder.Build();
 
                 Helpers.logName = configuration["Logging:EventLog"];
+                Helpers.InitializeLog(Helpers.logName);
+
                 return true;
             }
             catch (Exception ex)

@@ -37,7 +37,7 @@ namespace BusinessLayer
                             //logText = "20220222 18:12:04.218422, 26000300030001220222180954096583760100309       000000000054744000000000                    00000000000300000000000009932091412AMIGO SL                                                                                                                                                  35PA30 ->TRS:1";
                             if (logText.Length > 29)
                             {
-                                if (logText.Substring(0, 24) == lastDateTimeRecordTemp)
+                                if (logText.Substring(0, 26) == Helpers.lastDateTimeRecord)
                                 {
                                     numTrxSuccess = 0;
                                     numTrxFailure = 0;
@@ -53,7 +53,7 @@ namespace BusinessLayer
                                             numTrxFailure++;
                                         }
                                     }
-                                    lastDateTimeRecordTemp = logText.Substring(0, 24);
+                                    lastDateTimeRecordTemp = logText.Substring(0, 26);
                                 }
                                 else
                                 {
@@ -74,7 +74,7 @@ namespace BusinessLayer
                         }
                     }
                     Helpers.lastDateTimeRecord = lastDateTimeRecordTemp;
-                    return Helpers.lastDateTimeRecord.Substring(0, 4) + "/" + Helpers.lastDateTimeRecord.Substring(4, 2) + "/" + Helpers.lastDateTimeRecord.Substring(6);
+                    return Helpers.lastDateTimeRecord;
                 case LogTypeEntry.Tpv:
                     if (eventLog.Entries.Count == 0)
                     {
@@ -88,7 +88,7 @@ namespace BusinessLayer
                             //logText = "";
                             if (logText.Length > 29)
                             {
-                                if (logText.Substring(0, 26) == lastDateTimeRecordTemp)
+                                if (logText.Substring(0, 26) == Helpers.lastDateTimeRecord)
                                 {
                                     numTrxSuccess = 0;
                                     numTrxFailure = 0;
@@ -125,7 +125,7 @@ namespace BusinessLayer
                         }
                     }
                     Helpers.lastDateTimeRecord = lastDateTimeRecordTemp;
-                    return Helpers.lastDateTimeRecord.Substring(0, 4) + "/" + Helpers.lastDateTimeRecord.Substring(4, 2) + "/" + Helpers.lastDateTimeRecord.Substring(6);
+                    return Helpers.lastDateTimeRecord;
                 case LogTypeEntry.wsTrx:
                     if (eventLog.Entries.Count == 0)
                     {
@@ -139,7 +139,7 @@ namespace BusinessLayer
                             //logText = @"22/02/2022 19:01:58.59243, XML respuesta Recarga (TRS->0):<?xml version='1.0' encoding='utf - 8'?><ReloadResponse><ID_GRP>255</ID_GRP><ID_CHAIN>3</ID_CHAIN><ID_MERCHANT>3</ID_MERCHANT><ID_POS>1</ID_POS><DateTime>22/02/2022 19:00:08</DateTime><PhoneNumber>6481004471</PhoneNumber><TransNumber>62666</TransNumber><Brand></Brand><Instr1></Instr1><Instr2></Instr2><AutoNo>0</AutoNo><ResponseCode>35</ResponseCode><DescripcionCode>Numero de telefono invalido</DescripcionCode></ReloadResponse>";
                             if (logText.Length > 29)
                             {
-                                if (logText.Substring(0, 24) == lastDateTimeRecordTemp)
+                                if (logText.Substring(0, 26) == Helpers.lastDateTimeRecord)
                                 {
                                     numTrxSuccess = 0;
                                     numTrxFailure = 0;
@@ -173,13 +173,13 @@ namespace BusinessLayer
                                         numTrxFailure++;
                                     }
 
-                                    lastDateTimeRecordTemp = logText.Substring(0, 24);
+                                    lastDateTimeRecordTemp = logText.Substring(0, 26);
                                 }
                             }
                         }
                     }
                     Helpers.lastDateTimeRecord = lastDateTimeRecordTemp;
-                    return Helpers.lastDateTimeRecord.Substring(0, 4) + "/" + Helpers.lastDateTimeRecord.Substring(4, 2) + "/" + Helpers.lastDateTimeRecord.Substring(6);
+                    return Helpers.lastDateTimeRecord;
                 case LogTypeEntry.wsServicePayment:
                     if (eventLog.Entries.Count == 0)
                     {
@@ -190,11 +190,13 @@ namespace BusinessLayer
                         foreach (EventLogEntry entry in eventLog.Entries)
                         {
                             logText = entry.Message;
-                            logText = "2022/02/18 11:42:26.116066, WS Pago_Servicios | Respuesta del método Ejecuta_Info: CODIGORESPUESTA: 93CODIGORESPUESTADESCR: Mantenimiento en progreso ";
+                            //Helpers.Log(logText.Substring(0, 26) + " es igual a " + Helpers.lastDateTimeRecord + " ?", Helpers.LogType.info);
+                            //logText = "2022/02/18 11:42:26.116066, WS Pago_Servicios | Respuesta del método Ejecuta_Info: CODIGORESPUESTA: 93CODIGORESPUESTADESCR: Mantenimiento en progreso ";
                             if (logText.Length > 29)
-                            {
-                                if (logText.Substring(0, 24) == lastDateTimeRecordTemp)
+                            {                                
+                                if (logText.Substring(0, 26) == Helpers.lastDateTimeRecord)
                                 {
+                                    //Helpers.Log("SI, se reinician contadores", Helpers.LogType.info);
                                     numTrxSuccess = 0;
                                     numTrxFailure = 0;
 
@@ -212,6 +214,7 @@ namespace BusinessLayer
                                 }
                                 else
                                 {
+                                    //Helpers.Log("NO", Helpers.LogType.info);
                                     string ResponseCodeXml = "00";
                                     if (logText.IndexOf("CODIGORESPUESTA: ") > 0)
                                     {
@@ -228,7 +231,7 @@ namespace BusinessLayer
                         }
                     }
                     Helpers.lastDateTimeRecord = lastDateTimeRecordTemp;
-                    return Helpers.lastDateTimeRecord.Substring(0, 4) + "/" + Helpers.lastDateTimeRecord.Substring(4, 2) + "/" + Helpers.lastDateTimeRecord.Substring(6); ;
+                    return Helpers.lastDateTimeRecord;
                 default:
                     return Helpers.lastDateTimeRecord;
             }

@@ -40,3 +40,4 @@ C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\obj\Debug\
 C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\obj\Debug\net6.0-windows\LogMonitor.pdb
 C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\obj\Debug\net6.0-windows\LogMonitor.genruntimeconfig.cache
 C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\obj\Debug\net6.0-windows\ref\LogMonitor.dll
+C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\bin\Debug\net6.0-windows\Version.txt
