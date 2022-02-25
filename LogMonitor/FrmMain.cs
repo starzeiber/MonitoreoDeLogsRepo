@@ -1,6 +1,5 @@
 ﻿using BusinessLayer;
 using System.ComponentModel;
-using System.Reflection;
 
 namespace LogMonitor
 {
@@ -85,7 +84,8 @@ namespace LogMonitor
             }
             catch (Exception ex)
             {
-                Task.Factory.StartNew(() => bot.SendMessageAsync("Error en el monitor de logs para el cliente: " + Helpers.clientName + ". " + Helpers.GetPathCall(ex.Message)));
+                Helpers.Log(Helpers.GetPathCall(ex.Message + " valor: " + Helpers.lastDateTimeRecord), Helpers.LogType.error);
+                Task.Factory.StartNew(() => bot.SendMessageAsync("Error en el monitor de logs para el cliente: " + Helpers.clientName + ". " + Helpers.GetPathCall(ex.Message + " valor: " + Helpers.lastDateTimeRecord)));
             }
 
         }
@@ -101,6 +101,7 @@ namespace LogMonitor
                     Task.Factory.StartNew(() => bot.SendMessageAsync("Se detectaron " + int.Parse(split[1]).ToString() + " codigos de error " +
                         "con el monitor de logs para el cliente " + Helpers.clientName));
                 }
+                Helpers.Log("Fecha y hora del último registro: " + Helpers.lastDateTimeRecord, Helpers.LogType.info);
             }
         }
 

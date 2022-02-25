@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("UMB")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Monitor de LOG sobre mensajería PX, TPV,, WS xml y WS pago de servicios")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("LogMonitor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LogMonitor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0")]
