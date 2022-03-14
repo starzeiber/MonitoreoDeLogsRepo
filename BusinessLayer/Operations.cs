@@ -12,7 +12,7 @@ namespace BusinessLayer
             wsTrx,
             wsServicePayment
         }
-        public static string ReadLogEntries(string logName, LogTypeEntry logTypeEntry, ref int numTrxSuccess, ref int numTrxFailure)
+        public static string ReadLogEntries(string logName, LogTypeEntry logTypeEntry, ref int numTrxSuccess, ref int numTrxFailure, ref List<string> listResponseCodes)
         {
             EventLog eventLog = new()
             {
@@ -42,6 +42,7 @@ namespace BusinessLayer
                                     {
                                         numTrxSuccess = 0;
                                         numTrxFailure = 0;
+                                        listResponseCodes.Clear();
 
                                         if (logText.Substring(24, 5) == ", 140" || logText.Substring(24, 5) == ", 260")
                                         {
@@ -51,6 +52,7 @@ namespace BusinessLayer
                                             }
                                             else
                                             {
+                                                listResponseCodes.Add(logText.Substring(307, 2));
                                                 numTrxFailure++;
                                             }
                                         }
@@ -66,6 +68,7 @@ namespace BusinessLayer
                                             }
                                             else
                                             {
+                                                listResponseCodes.Add(logText.Substring(307, 2));
                                                 numTrxFailure++;
                                             }
                                         }
@@ -93,6 +96,7 @@ namespace BusinessLayer
                                     {
                                         numTrxSuccess = 0;
                                         numTrxFailure = 0;
+                                        listResponseCodes.Clear();
 
                                         if (logText.Substring(35, 4) == ":210")
                                         {
@@ -102,6 +106,7 @@ namespace BusinessLayer
                                             }
                                             else
                                             {
+                                                listResponseCodes.Add(logText.Substring(133, 2));
                                                 numTrxFailure++;
                                             }
                                         }
@@ -117,6 +122,7 @@ namespace BusinessLayer
                                             }
                                             else
                                             {
+                                                listResponseCodes.Add(logText.Substring(133, 2));
                                                 numTrxFailure++;
                                             }
                                         }
@@ -144,6 +150,7 @@ namespace BusinessLayer
                                     {
                                         numTrxSuccess = 0;
                                         numTrxFailure = 0;
+                                        listResponseCodes.Clear();
 
                                         int responseCode = Operations.ReadXML(logText);
 
@@ -153,6 +160,7 @@ namespace BusinessLayer
                                         }
                                         else if (responseCode == 6)
                                         {
+                                            listResponseCodes.Add("6");
                                             numTrxFailure++;
                                         }
 
@@ -171,6 +179,7 @@ namespace BusinessLayer
                                         }
                                         else if (responseCode == 6)
                                         {
+                                            listResponseCodes.Add("6");
                                             numTrxFailure++;
                                         }
 
@@ -199,6 +208,7 @@ namespace BusinessLayer
                                         //Helpers.Log("SI, se reinician contadores", Helpers.LogType.info);
                                         numTrxSuccess = 0;
                                         numTrxFailure = 0;
+                                        listResponseCodes.Clear();
 
                                         string ResponseCodeXml = "00";
                                         if (logText.IndexOf("CODIGORESPUESTA: ") > 0)
@@ -208,6 +218,7 @@ namespace BusinessLayer
 
                                         if (int.Parse(ResponseCodeXml) > 0)
                                         {
+                                            listResponseCodes.Add(logText.IndexOf("CODIGORESPUESTA: ").ToString());
                                             numTrxFailure++;
                                         }
                                         lastDateTimeRecordTemp = logText.Substring(0, 26);
@@ -222,6 +233,7 @@ namespace BusinessLayer
 
                                         if (int.Parse(ResponseCodeXml) > 0)
                                         {
+                                            listResponseCodes.Add(logText.IndexOf("CODIGORESPUESTA: ").ToString());
                                             numTrxFailure++;
                                         }
                                         lastDateTimeRecordTemp = logText.Substring(0, 26);

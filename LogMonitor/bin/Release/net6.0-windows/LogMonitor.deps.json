@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "LogMonitor/2.0.0": {
+      "LogMonitor/2.1.0": {
         "dependencies": {
           "BusinessLayer": "1.0.0",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
@@ -241,7 +241,7 @@
     }
   },
   "libraries": {
-    "LogMonitor/2.0.0": {
+    "LogMonitor/2.1.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

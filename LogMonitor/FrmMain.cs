@@ -28,6 +28,7 @@ namespace LogMonitor
                 MessageBox.Show(ex.Message);
                 Environment.Exit(0);
             }
+            buttonLifeTest.Enabled = false;
         }
 
         private void ButtonStart_Click(object sender, EventArgs e)
@@ -37,6 +38,7 @@ namespace LogMonitor
             timerEach.Interval = Helpers.monitorInterval * 60000;
             bkGrdWkReadLog.RunWorkerAsync();
             timerEach.Start();
+            buttonLifeTest.Enabled = true;
         }
 
         private void TimerEach_Tick(object sender, EventArgs e)
@@ -105,5 +107,17 @@ namespace LogMonitor
             }
         }
 
+        private void buttonLifeTest_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Helpers.Log("Es una prueba del monitor  de Q1C", Helpers.LogType.info);
+                Task.Factory.StartNew(() => bot.SendMessageAsync("Es una prueba del monitor  de Q1C"));
+            }
+            catch (Exception ex)
+            {
+                Helpers.Log(ex.Message, Helpers.LogType.error);
+            }            
+        }
     }
 }

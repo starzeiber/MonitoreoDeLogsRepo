@@ -1006,7 +1006,7 @@
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
-    "version": "2.0.0",
+    "version": "2.1.0",
     "restore": {
       "projectUniqueName": "C:\\Users\\Desarrollo48\\Documents\\Github\\MonitoreoDeLogsRepo\\LogMonitor\\LogMonitor.csproj",
       "projectName": "LogMonitor",
@@ -1079,7 +1079,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

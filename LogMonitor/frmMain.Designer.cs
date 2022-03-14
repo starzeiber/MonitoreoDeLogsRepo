@@ -39,6 +39,7 @@
             this.buttonStart = new System.Windows.Forms.Button();
             this.bkGrdWkReadLog = new System.ComponentModel.BackgroundWorker();
             this.timerEach = new System.Windows.Forms.Timer(this.components);
+            this.buttonLifeTest = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -117,9 +118,9 @@
             // 
             // buttonStart
             // 
-            this.buttonStart.Location = new System.Drawing.Point(113, 265);
+            this.buttonStart.Location = new System.Drawing.Point(38, 262);
             this.buttonStart.Name = "buttonStart";
-            this.buttonStart.Size = new System.Drawing.Size(75, 23);
+            this.buttonStart.Size = new System.Drawing.Size(75, 39);
             this.buttonStart.TabIndex = 5;
             this.buttonStart.Text = "Iniciar";
             this.buttonStart.UseVisualStyleBackColor = true;
@@ -134,11 +135,22 @@
             // 
             this.timerEach.Tick += new System.EventHandler(this.TimerEach_Tick);
             // 
+            // buttonLifeTest
+            // 
+            this.buttonLifeTest.Location = new System.Drawing.Point(189, 262);
+            this.buttonLifeTest.Name = "buttonLifeTest";
+            this.buttonLifeTest.Size = new System.Drawing.Size(75, 39);
+            this.buttonLifeTest.TabIndex = 6;
+            this.buttonLifeTest.Text = "Prueba de vida";
+            this.buttonLifeTest.UseVisualStyleBackColor = true;
+            this.buttonLifeTest.Click += new System.EventHandler(this.buttonLifeTest_Click);
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(305, 313);
+            this.Controls.Add(this.buttonLifeTest);
             this.Controls.Add(this.buttonStart);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.textBoxLogName);
@@ -165,5 +177,6 @@
         private Button buttonStart;
         private System.ComponentModel.BackgroundWorker bkGrdWkReadLog;
         private System.Windows.Forms.Timer timerEach;
+        private Button buttonLifeTest;
     }
 }
