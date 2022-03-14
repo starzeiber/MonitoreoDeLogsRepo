@@ -1,11 +1,13 @@
 ﻿using BusinessLayer;
 using System.ComponentModel;
+using System.Text;
 
 namespace LogMonitor
 {
     public partial class FrmMain : Form
     {
         TelegramBotAPI.TelegramBot bot;
+        List<string> listResponseCodes= new List<string>();
 
         public FrmMain()
         {
@@ -58,19 +60,19 @@ namespace LogMonitor
                     TimeSpan timeSpan;
                     if (radioButtonPx.Checked)
                     {
-                        timeSpan = dateTimeReference.Subtract(DateTime.Parse(Operations.ReadLogEntries(textBoxLogName.Text, Operations.LogTypeEntry.PX, ref numTrxSuccess, ref numTrxFailure)));
+                        timeSpan = dateTimeReference.Subtract(DateTime.Parse(Operations.ReadLogEntries(textBoxLogName.Text, Operations.LogTypeEntry.PX, ref numTrxSuccess, ref numTrxFailure, ref listResponseCodes)));
                     }
                     else if (radioButtonTpv.Checked)
                     {
-                        timeSpan = dateTimeReference.Subtract(DateTime.Parse(Operations.ReadLogEntries(textBoxLogName.Text, Operations.LogTypeEntry.Tpv, ref numTrxSuccess, ref numTrxFailure)));
+                        timeSpan = dateTimeReference.Subtract(DateTime.Parse(Operations.ReadLogEntries(textBoxLogName.Text, Operations.LogTypeEntry.Tpv, ref numTrxSuccess, ref numTrxFailure, ref listResponseCodes)));
                     }
                     else if (radioButtonWsTrx.Checked)
                     {
-                        timeSpan = dateTimeReference.Subtract(DateTime.Parse(Operations.ReadLogEntries(textBoxLogName.Text, Operations.LogTypeEntry.wsTrx, ref numTrxSuccess, ref numTrxFailure)));
+                        timeSpan = dateTimeReference.Subtract(DateTime.Parse(Operations.ReadLogEntries(textBoxLogName.Text, Operations.LogTypeEntry.wsTrx, ref numTrxSuccess, ref numTrxFailure, ref listResponseCodes)));
                     }
                     else
                     {
-                        timeSpan = dateTimeReference.Subtract(DateTime.Parse(Operations.ReadLogEntries(textBoxLogName.Text, Operations.LogTypeEntry.wsServicePayment, ref numTrxSuccess, ref numTrxFailure)));
+                        timeSpan = dateTimeReference.Subtract(DateTime.Parse(Operations.ReadLogEntries(textBoxLogName.Text, Operations.LogTypeEntry.wsServicePayment, ref numTrxSuccess, ref numTrxFailure, ref listResponseCodes)));
                     }
 
                     if (Helpers.validateNotSales)
@@ -99,9 +101,11 @@ namespace LogMonitor
                 string[] split = e.Result.ToString().Split("|");
                 if (int.Parse(split[1]) > Helpers.numTrxError)
                 {
-                    Helpers.Log("Se detectaron " + int.Parse(split[1]).ToString() + " errores", Helpers.LogType.warnning);
-                    Task.Factory.StartNew(() => bot.SendMessageAsync("Se detectaron " + int.Parse(split[1]).ToString() + " codigos de error " +
-                        "con el monitor de logs para el cliente " + Helpers.clientName));
+                    StringBuilder codes=new StringBuilder();
+                    listResponseCodes.ForEach(x => codes.Append(x+ ", "));
+                    Helpers.Log("Se detectaron " + int.Parse(split[1]).ToString() + " errores: " + codes.ToString(), Helpers.LogType.warnning);
+                    Task.Factory.StartNew(() => bot.SendMessageAsync("Se detectaron " + int.Parse(split[1]).ToString() + " errores: " + codes.ToString() +
+                        " con el monitor de logs para el cliente " + Helpers.clientName));
                 }
                 Helpers.Log("Fecha y hora del último registro: " + Helpers.lastDateTimeRecord, Helpers.LogType.info);
             }

@@ -1,3 +1,10 @@
+C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\obj\Release\net6.0-windows\LogMonitor.csproj.AssemblyReference.cache
+C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\obj\Release\net6.0-windows\LogMonitor.FrmMain.resources
+C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\obj\Release\net6.0-windows\LogMonitor.csproj.GenerateResource.cache
+C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\obj\Release\net6.0-windows\LogMonitor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\obj\Release\net6.0-windows\LogMonitor.AssemblyInfoInputs.cache
+C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\obj\Release\net6.0-windows\LogMonitor.AssemblyInfo.cs
+C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\obj\Release\net6.0-windows\LogMonitor.csproj.CoreCompileInputs.cache
 C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\bin\Release\net6.0-windows\LogMonitor.exe
 C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\bin\Release\net6.0-windows\appsettings.json
 C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\bin\Release\net6.0-windows\Version.txt
@@ -28,13 +35,6 @@ C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\bin\Releas
 C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\bin\Release\net6.0-windows\Telegram.Bot.xml
 C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\bin\Release\net6.0-windows\Telegram.Bot.Extensions.Polling.xml
 C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\bin\Release\net6.0-windows\TelegramBotAPI.pdb
-C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\obj\Release\net6.0-windows\LogMonitor.csproj.AssemblyReference.cache
-C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\obj\Release\net6.0-windows\LogMonitor.FrmMain.resources
-C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\obj\Release\net6.0-windows\LogMonitor.csproj.GenerateResource.cache
-C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\obj\Release\net6.0-windows\LogMonitor.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\obj\Release\net6.0-windows\LogMonitor.AssemblyInfoInputs.cache
-C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\obj\Release\net6.0-windows\LogMonitor.AssemblyInfo.cs
-C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\obj\Release\net6.0-windows\LogMonitor.csproj.CoreCompileInputs.cache
 C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\obj\Release\net6.0-windows\LogMonitor.csproj.CopyComplete
 C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\obj\Release\net6.0-windows\LogMonitor.dll
 C:\Users\Desarrollo48\Documents\Github\MonitoreoDeLogsRepo\LogMonitor\obj\Release\net6.0-windows\refint\LogMonitor.dll

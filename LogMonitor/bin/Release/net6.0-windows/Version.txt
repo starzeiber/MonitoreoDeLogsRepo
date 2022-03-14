@@ -3,3 +3,4 @@
 @			UMB			24/02/2022	1.1.0		Corrección de errores e integración del event log
 @			UMB			25/02/2022	2.0.0		Se agrega un control de excepciones mayor
 @			UMB			01/03/2022	2.1.0		Se agrega un botón para realizar una prueba de vida
+@			UMB			41/03/2022	2.2.0		Se agrega un listado acumulativo de códigos para ser más preciso en el monitor
