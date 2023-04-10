@@ -216,11 +216,24 @@ namespace BusinessLayer
                                             ResponseCodeXml = logText.Substring(logText.IndexOf("CODIGORESPUESTA: ") + 17, 2);
                                         }
 
-                                        if (int.Parse(ResponseCodeXml) > 0)
+                                        if (int.TryParse(ResponseCodeXml, out int auxCode))
                                         {
-                                            listResponseCodes.Add(logText.IndexOf("CODIGORESPUESTA: ").ToString());
-                                            numTrxFailure++;
+                                            if (auxCode > 0)
+                                            {
+                                                listResponseCodes.Add(ResponseCodeXml);
+                                                numTrxFailure++;
+                                            }
                                         }
+                                        else
+                                        {
+                                            ResponseCodeXml = logText.Substring(logText.IndexOf("CODIGORESPUESTA: ") + 17, 1);
+                                            if (int.Parse(ResponseCodeXml) > 0)
+                                            {
+                                                listResponseCodes.Add(ResponseCodeXml);
+                                                numTrxFailure++;
+                                            }
+                                        }
+                                        
                                         lastDateTimeRecordTemp = logText.Substring(0, 26);
                                     }
                                     else
@@ -231,11 +244,24 @@ namespace BusinessLayer
                                             ResponseCodeXml = logText.Substring(logText.IndexOf("CODIGORESPUESTA: ") + 17, 2);
                                         }
 
-                                        if (int.Parse(ResponseCodeXml) > 0)
+                                        if (int.TryParse(ResponseCodeXml, out int auxCode))
                                         {
-                                            listResponseCodes.Add(logText.IndexOf("CODIGORESPUESTA: ").ToString());
-                                            numTrxFailure++;
+                                            if (auxCode > 0)
+                                            {
+                                                listResponseCodes.Add(ResponseCodeXml);
+                                                numTrxFailure++;
+                                            }
                                         }
+                                        else
+                                        {
+                                            ResponseCodeXml = logText.Substring(logText.IndexOf("CODIGORESPUESTA: ") + 17, 1);
+                                            if (int.Parse(ResponseCodeXml) > 0)
+                                            {
+                                                listResponseCodes.Add(ResponseCodeXml);
+                                                numTrxFailure++;
+                                            }
+                                        }
+
                                         lastDateTimeRecordTemp = logText.Substring(0, 26);
                                     }
                                 }
@@ -250,6 +276,7 @@ namespace BusinessLayer
             }
             catch (Exception ex)
             {
+                listResponseCodes.Clear();
                 Helpers.Log(Helpers.GetPathCall(ex.Message), Helpers.LogType.error);
                 return DateTime.Now.ToString();
             }
